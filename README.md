@@ -1,5 +1,4 @@
-
-
+<img src="README_images/demo.gif">
 
 # Progressive Immersion (PolySpatial)
 
@@ -29,6 +28,8 @@ A walkthrough on setting up a skydome with a slider that controls immersion leve
 5. Select your `Sky` object in the hierarchy, then go to **Skybox (material) -> Surface Options**
    - Set **Surface Type** to `Transparent`
    - Set **Blending Mode** to `Alpha`
+  
+<img src="README_images/img_1.png" width = 50%>
 
 > Always make changes to the skybox through the hierarchy, not the Assets folder.
 
@@ -36,6 +37,7 @@ A walkthrough on setting up a skydome with a slider that controls immersion leve
 
 1. Add an image to your folder
 2. In your `Sky` object in the hierarchy, drag the image onto the square next to **Base Map**
+<img src="README_images/img_2.png" width = 20%>
 
 ---
 
@@ -49,10 +51,13 @@ A walkthrough on setting up a skydome with a slider that controls immersion leve
 3. Open your Skydome scene and add `Manager` and `SpatialPanel_UI` to the hierarchy
 4. Double click `SpatialPanel_UI` and delete everything inside it except for the **slider**
 5. Set the `SpatialPanel_UI` transform position to `0, 0, 0` (or move it manually to sit near the Instructions panel)
+<img src="README_images/img_3.png" width = 50%>
 6. In the hierarchy, drag `SpatialPanel_UI` onto the **Instructions** object to make it a child of it
+<img src="README_images/img_4.png" width = 50%>
 7. Reposition `SpatialPanel_UI` so it sits nicely on the instructions panel
 
 > You may need to move the entire Instructions object up slightly depending on how it looks in the Simulator.
+<img src="README_images/img_5.png" width = 50%>
 
 ### Updating the Instruction Text
 
@@ -60,6 +65,7 @@ A walkthrough on setting up a skydome with a slider that controls immersion leve
 2. For both `title` and `description`, find the TextMeshPro text object and update the text:
    - Title: `Progressive Immersion`
    - Description: `Drag the slider to change immersion level`
+<img src="README_images/img_6.png" width = 50%>
 
 > Tip: Hold `Option` in the scene view to pan around easily.
 
@@ -84,6 +90,7 @@ After adding the script, you need to assign both fields in the Inspector:
 
 - **Slider Fill Renderer**: drag in `SliderImage`, found at `Instructions -> SpatialPanel_UI -> SliderBackdrop -> SliderImage`
 - **Sky Sphere Renderer**: drag in your `Sky` object from the hierarchy
+<img src="README_images/img_7.png" width = 50%>
 
 ---
 
@@ -91,12 +98,5 @@ After adding the script, you need to assign both fields in the Inspector:
 
 Before testing, make sure your hierarchy looks something like this:
 
-```
-Instructions
-    SpatialPanel_UI
-        SliderBackdrop
-            SliderImage
-Sky
-SkyOpacityController
-Manager
-```
+<img src="README_images/img_8.png" width = 50%>
+
